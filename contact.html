@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="referrer" content="always">
+    <meta name="description" content="Contacto - Ponte en contacto con nosotros para consultas, sugerencias o soporte técnico sobre nuestras calculadoras de inflación.">
+    <meta name="keywords" content="contacto calculadora inflación, soporte técnico, consultas económicas, sugerencias herramientas">
+    <title>Contacto - Calculadora de Inflaci&oacute;n</title>
+    <link href="" rel="canonical" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Calculadora de Inflación</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="privacy.html">Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ayudarte con cualquier consulta sobre nuestras herramientas de cálculo de inflación</p>
+            </section>
+
+            <section class="calculator-section">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>¿En qué podemos ayudarte?</h3>
+                        <ul class="contact-reasons">
+                            <li>Preguntas sobre el uso de las calculadoras</li>
+                            <li>Sugerencias para mejorar nuestros servicios</li>
+                            <li>Consultas sobre metodologías de cálculo</li>
+                            <li>Reportar errores técnicos</li>
+                            <li>Solicitar nuevas funcionalidades</li>
+                            <li>Preguntas generales sobre inflación</li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envíanos un mensaje</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nombre completo:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">País:</label>
+                            <select id="country" name="country" class="country-dropdown">
+                                <option value="">Selecciona tu país</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="mexico">México</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="peru">Perú</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="usa">Estados Unidos</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Asunto:</label>
+                            <select id="subject" name="subject" class="country-dropdown" required>
+                                <option value="">Selecciona el tipo de consulta</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="error">Reporte de error</option>
+                                <option value="metodologia">Consulta sobre metodología</option>
+                                <option value="funcionalidad">Nueva funcionalidad</option>
+                                <option value="general">Consulta general</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Describe tu consulta, sugerencia o problema en detalle..."></textarea>
+                        </div>
+
+                        <button type="submit" class="calculate-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="article-section">
+                <div class="faq-section">
+                    <h3>Preguntas Frecuentes</h3>
+                    
+                    <div class="faq-item">
+                        <h4>¿Cómo funcionan las calculadoras de inflación?</h4>
+                        <p>Nuestras calculadoras utilizan la fórmula estándar de inflación compuesta: Valor Futuro = Valor Inicial × (1 + tasa de inflación)^años. Esta fórmula te permite ver cómo el poder adquisitivo de tu dinero cambia con el tiempo.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>¿Son precisos los resultados?</h4>
+                        <p>Los resultados son proyecciones basadas en las tasas de inflación que ingreses. Para obtener resultados más precisos, te recomendamos usar tasas de inflación oficiales de los bancos centrales de cada país.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>¿Almacenan mis datos personales?</h4>
+                        <p>No almacenamos ningún dato personal. Todos los cálculos se realizan localmente en tu dispositivo y no enviamos información a nuestros servidores.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>¿Puedo solicitar una calculadora para otro país?</h4>
+                        <p>¡Por supuesto! Si necesitas una calculadora para un país que no está en nuestra lista, contáctanos y evaluaremos la posibilidad de agregarla.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>¿Son gratuitas las calculadoras?</h4>
+                        <p>Sí, todas nuestras herramientas son completamente gratuitas. Nuestro objetivo es hacer la educación financiera accesible para todos.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="privacy.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Calculadoras por País</h4>
+                    <ul>
+                        <li><a href="index.html">Argentina</a></li>
+                        <li><a href="calculadora-ipc-chile.html">Chile</a></li>
+                        <li><a href="colombia.html">Colombia</a></li>
+                        <li><a href="mexico.html">México</a></li>
+                        <li><a href="paraguay.html">Paraguay</a></li>
+                        <li><a href="peru.html">Perú</a></li>
+                        <li><a href="uruguay.html">Uruguay</a></li>
+                        <li><a href="united-state.html">Estados Unidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; 2025 Calculadora de Inflación. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

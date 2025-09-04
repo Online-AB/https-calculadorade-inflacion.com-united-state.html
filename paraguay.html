@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="referrer" content="always">
+    <meta name="description" content="Calculadora de inflación Paraguay - Herramienta para calcular el impacto de la inflación en el guaraní paraguayo. Resultados precisos y actualizados.">
+    <meta name="keywords" content="calculadora inflación Paraguay, inflación guaraní paraguayo, IPC Paraguay, calculadora económica Paraguay, impacto inflación Paraguay">
+    <title>Calculadora de Inflaci&oacute;n Paraguay - IPC Paraguay</title>
+    <link href="" rel="canonical" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Calculadora de Inflación</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="privacy.html">Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <h2>Calculadora de Inflación Paraguay</h2>
+                <p>Calcula el impacto real de la inflación en tu poder adquisitivo con guaraníes</p>
+            </section>
+
+            <section class="country-selector">
+                <h3>Selecciona tu país:</h3>
+                <select id="countrySelect" class="country-dropdown">
+                    <option value="index.html">Calculadora de Inflación Argentina</option>
+                    <option value="calculadora-ipc-chile.html">Calculadora de la inflación de Chile</option>
+                    <option value="colombia.html">Calculadora de Inflación de Colombia</option>
+                    <option value="mexico.html">Calculadora de Inflación México</option>
+                    <option value="paraguay.html" selected>Calculadora de la inflación Paraguay</option>
+                    <option value="peru.html">Calculadora de inflación de Perú</option>
+                    <option value="uruguay.html">Calculadora de inflación de Uruguay</option>
+                    <option value="united-state.html">US Inflation Calculator</option>
+                </select>
+            </section>
+
+            <section class="calculator-section">
+                <div class="calculator-container">
+                    <h3>Calculadora de Inflación Paraguay</h3>
+                    <form id="inflationForm" class="calculator-form">
+                        <div class="form-group">
+                            <label for="initialAmount">Monto inicial (₲):</label>
+                            <input type="number" id="initialAmount" step="1" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inflationRate">Tasa de inflación anual (%):</label>
+                            <input type="number" id="inflationRate" step="0.01" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="years">Número de años:</label>
+                            <input type="number" id="years" step="1" min="1" required>
+                        </div>
+                        <button type="button" class="calculate-btn" onclick="calculateInflation()">Calcular Inflación</button>
+                    </form>
+                    
+                    <div id="results" class="results-section" style="display: none;">
+                        <h4>Resultados:</h4>
+                        <div class="result-item">
+                            <span class="result-label">Valor futuro:</span>
+                            <span id="futureValue" class="result-value"></span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Pérdida de poder adquisitivo:</span>
+                            <span id="purchasingPowerLoss" class="result-value"></span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Inflación acumulada:</span>
+                            <span id="cumulativeInflation" class="result-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <a href="https://calculadorade-inflacion.com/paraguay.html" class="cta-button">Calculadora de Inflación Paraguay</a>
+            </section>
+
+            <section class="article-section">
+                <article class="demo-article">
+                    <h2>Inflación en Paraguay: Perspectivas Económicas 2025</h2>
+                    <div class="article-content">
+                        <h3>Economía Paraguaya y Estabilidad Monetaria</h3>
+                        <p>Paraguay ha logrado mantener niveles de inflación relativamente bajos en comparación con otros países de la región. El Banco Central del Paraguay ha implementado políticas monetarias efectivas para controlar la inflación.</p>
+                        
+                        <h3>El Guaraní y su Poder Adquisitivo</h3>
+                        <p>El guaraní paraguayo ha mostrado cierta estabilidad frente a las fluctuaciones inflacionarias regionales. Sin embargo, factores externos como los precios de commodities pueden influir en su valor real.</p>
+                        
+                        <h3>Sectores Clave de la Economía Paraguaya</h3>
+                        <p>La agricultura, ganadería y los servicios son sectores fundamentales que pueden verse afectados por cambios inflacionarios. Nuestra calculadora te ayuda a proyectar estos impactos en tu economía personal.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="privacy.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Calculadoras por País</h4>
+                    <ul>
+                        <li><a href="index.html">Argentina</a></li>
+                        <li><a href="calculadora-ipc-chile.html">Chile</a></li>
+                        <li><a href="colombia.html">Colombia</a></li>
+                        <li><a href="mexico.html">México</a></li>
+                        <li><a href="peru.html">Perú</a></li>
+                        <li><a href="uruguay.html">Uruguay</a></li>
+                        <li><a href="united-state.html">Estados Unidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; 2025 Calculadora de Inflación. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

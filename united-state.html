@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="referrer" content="always">
+    <meta name="description" content="US Inflation Calculator - Calculate the impact of inflation on your purchasing power in US Dollars. Accurate results for financial planning.">
+    <meta name="keywords" content="US inflation calculator, inflation USD, CPI United States, economic calculator USA, inflation impact USA">
+    <title>US Inflation Calculator - CPI United States</title>
+    <link href="" rel="canonical" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Inflation Calculator</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <h2>US Inflation Calculator</h2>
+                <p>Calculate the real impact of inflation on your purchasing power in US Dollars</p>
+            </section>
+
+            <section class="country-selector">
+                <h3>Select your country:</h3>
+                <select id="countrySelect" class="country-dropdown">
+                    <option value="index.html">Calculadora de Inflación Argentina</option>
+                    <option value="calculadora-ipc-chile.html">Calculadora de la inflación de Chile</option>
+                    <option value="colombia.html">Calculadora de Inflación de Colombia</option>
+                    <option value="mexico.html">Calculadora de Inflación México</option>
+                    <option value="paraguay.html">Calculadora de la inflación Paraguay</option>
+                    <option value="peru.html">Calculadora de inflación de Perú</option>
+                    <option value="uruguay.html">Calculadora de inflación de Uruguay</option>
+                    <option value="united-state.html" selected>US Inflation Calculator</option>
+                </select>
+            </section>
+
+            <section class="calculator-section">
+                <div class="calculator-container">
+                    <h3>US Inflation Calculator</h3>
+                    <form id="inflationForm" class="calculator-form">
+                        <div class="form-group">
+                            <label for="initialAmount">Initial amount (USD $):</label>
+                            <input type="number" id="initialAmount" step="0.01" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inflationRate">Annual inflation rate (%):</label>
+                            <input type="number" id="inflationRate" step="0.01" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="years">Number of years:</label>
+                            <input type="number" id="years" step="1" min="1" required>
+                        </div>
+                        <button type="button" class="calculate-btn" onclick="calculateInflation()">Calculate Inflation</button>
+                    </form>
+                    
+                    <div id="results" class="results-section" style="display: none;">
+                        <h4>Results:</h4>
+                        <div class="result-item">
+                            <span class="result-label">Future value:</span>
+                            <span id="futureValue" class="result-value"></span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Purchasing power loss:</span>
+                            <span id="purchasingPowerLoss" class="result-value"></span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Cumulative inflation:</span>
+                            <span id="cumulativeInflation" class="result-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <a href="https://calculadorade-inflacion.com/united-state.html" class="cta-button">US Inflation Calculator</a>
+            </section>
+
+            <section class="article-section">
+                <article class="demo-article">
+                    <h2>US Inflation: Economic Analysis 2025</h2>
+                    <div class="article-content">
+                        <h3>US Economic Landscape and Inflation</h3>
+                        <p>The United States has experienced varying levels of inflation throughout its economic history. The Federal Reserve plays a crucial role in managing inflation through monetary policy adjustments and interest rate decisions.</p>
+                        
+                        <h3>Consumer Price Index (CPI) in the United States</h3>
+                        <p>The CPI is the primary measure of inflation in the US, tracking price changes in a basket of goods and services. This index directly affects cost of living adjustments and economic planning for millions of Americans.</p>
+                        
+                        <h3>Impact on American Households</h3>
+                        <p>Inflation affects every aspect of American life, from housing costs to grocery prices. Understanding these impacts helps individuals make better financial decisions and protect their purchasing power over time.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Calculators by Country</h4>
+                    <ul>
+                        <li><a href="index.html">Argentina</a></li>
+                        <li><a href="calculadora-ipc-chile.html">Chile</a></li>
+                        <li><a href="colombia.html">Colombia</a></li>
+                        <li><a href="mexico.html">México</a></li>
+                        <li><a href="paraguay.html">Paraguay</a></li>
+                        <li><a href="peru.html">Perú</a></li>
+                        <li><a href="uruguay.html">Uruguay</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; 2025 Inflation Calculator. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
